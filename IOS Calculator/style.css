@@ -1,0 +1,164 @@
+*{
+  box-sizing: border-box;
+  padding: 0px;
+  margin:0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.calculator {
+  background-color: black;
+  height: 1200px;
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  padding: 0px;
+  font-size: 120px;
+  color: white;
+  position: relative;
+}
+
+
+
+
+.topside {
+  display: flex;
+  height: 250px;
+  justify-content: space-between;
+  padding: 0 20px;
+  font-size: 24px;
+  margin-top: 15px;
+}
+
+#signal-strength {
+  height: 30px;
+  list-style: none;
+  overflow: hidden;
+  position: absolute;
+  right: 120px;
+  top: 7px;
+}
+#signal-strength li {
+  display: inline-block;
+  width: 6px;
+  float: left;
+  height: 100%;
+  margin-right: 2px;
+}
+#signal-strength li.pretty-strong {
+  padding-top: 10px;
+}
+#signal-strength li.strong {
+  padding-top: 16px;
+}
+#signal-strength li.weak {
+  padding-top: 20px;
+}
+#signal-strength li.very-weak {
+  padding-top: 24px;
+}
+#signal-strength li div {
+  height: 100%;
+  background: white;
+}
+
+.topside .wifi {
+  font-size: 24px;
+  position: absolute;
+  right: 80px;
+  top: 12px;
+}
+
+.battery {
+  border: 3px solid #333;
+  width: 48px;
+  height: 22px;
+  padding: 2px;
+  border-radius: 4px;
+  position: relative;
+  font-size: 14px;
+  text-align: center;
+}
+
+.battery-level {
+  background: #30b455;  
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  width: 70%;
+  height: 100%;
+}
+
+.value {
+  color: white;
+  text-align: right;
+  padding-right: 70px ;
+}
+
+.keyboard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 26px;
+  margin: 12px;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  align-items: center;
+  background: #333;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  font-size: 50px;
+  font-weight: 600;
+  height: 110px;
+  justify-content: center;
+  transition: filter .3s;
+  width: 110px;
+  padding-right: 0px;
+  margin: 12px;
+}
+
+.button.function {
+  background-color: lightgray;
+  color: black;
+}
+
+
+.button.operator {
+  background-color: orange;
+  font-size: 50px;
+  font-weight: bold;
+  color: white;
+}
+
+.button.number-0 {
+  width: 250px;
+  border-radius: 125px;
+  justify-content: left;
+  padding-left: 45px;
+  font-size: 50px;
+}
+
+.bottom {
+  width: 200px;
+  height: 8px;
+  background: white;
+  border-radius: 4px;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}

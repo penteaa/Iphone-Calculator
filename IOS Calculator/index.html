@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator Flex</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  
+  <div class="calculator">
+
+    <div class="topside">
+      <div class="clock">
+        <span class="hour"></span>:<span class="minute"></span>
+      </div>
+      <div class="signal">
+        <ul id="signal-strength">
+          <li class="very-weak"><div></div></li>
+          <li class="weak"><div></div></li>
+          <li class="strong"><div></div></li>
+          <li class="pretty-strong"><div></div></li>
+      </ul>
+      </div>
+      <div class="wifi">
+      <i class="fa fa-wifi" id="wifi"></i>
+      </div>
+      <div class="battery">
+        <div class="battery-level">70%</div>
+      </div>
+    
+      
+      
+    </div>
+
+    <div class="value">0</div>
+
+    
+    <div class="buttons-container">
+      <div class="button function ac">AC</div>
+      <div class="button function pm">&plusmn;</div>
+      <div class="button function percent">&percnt;</div>
+      <div class="button operator division">&divide;</div>
+    </div>
+
+    <div class="buttons-container">
+      <div class="button number-7">7</div>
+      <div class="button number-8">8</div>
+      <div class="button number-9">9</div>
+      <div class="button function operator multiplication">&times;</div>
+    </div>
+
+    <div class="buttons-container">
+      <div class="button number-4">4</div>
+      <div class="button number-5">5</div>
+      <div class="button number-6">6</div>
+      <div class="button function operator subtraction">&minus;</div>
+    </div>
+
+    <div class="buttons-container">
+      <div class="button number-1">1</div>
+      <div class="button number-2">2</div>
+      <div class="button number-3">3</div>
+      <div class="button function operator addition">&plus;</div>
+    </div>
+
+    <div class="buttons-container">
+      <div class="button number-0">0</div>
+      <div class="button decimal">&comma;</div>
+      <div class="button operator equal">&equals;</div>
+    </div>
+
+    <div class="bottom">
+    </div>
+    
+  </div>
+
+ 
+
+
+</body>
+  <script src="index.js"></script>
+
+</html>
